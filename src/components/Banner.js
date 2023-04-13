@@ -5,6 +5,8 @@ import { TbPlayerPlayFilled } from "react-icons/tb";
 
 
 const Banner = () => {
+  const[state]=React.useState({title:"I am Sankalp Singh",text:"i,m sankalp,front end developer having experience in Reactjs,CSS,Bootstrap",
+       image:"/images/sankalp.png"})
   return (
     <header className='header'>
       <div className='container'>
@@ -26,10 +28,9 @@ const Banner = () => {
                 <FaApple/>
                 </li>
               </ul>
-              <h1>I am Sankalp Singh</h1>
+              <h1>{state.title}</h1>
               <p>
-                i,m sankalp,front end developer having experience in
-                Reactjs,CSS,Bootstrap
+                {state.text}
               </p>
               <div className='header_buttons'>
                 <a href='!#' className='btn btn-outline'>My Portfolio</a>
@@ -41,7 +42,7 @@ const Banner = () => {
             </div>
             <div className='col-6'>
               <div className='banner__image'>
-                <img src="/images/sankalp.png" alt="man"/>
+                <img src={state.image} alt="man"/>
               </div>
             </div>
           </div>

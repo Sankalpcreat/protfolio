@@ -13,6 +13,9 @@ font-family: 'Poppins', sans-serif;
   height: 100vh;
   background: url("/public/images/bg.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  
 }
 .navbar{
   width: 100%;
