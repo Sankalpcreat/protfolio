@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaFacebookF,FaLinkedinIn,FaGithub,FaApple} from "react-icons/fa";
 import { TbPlayerPlayFilled } from "react-icons/tb";
-import { io } from 'socket.io-client';
+
 
 
 const Banner = () => {
