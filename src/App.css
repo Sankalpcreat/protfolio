@@ -58,6 +58,10 @@ font-family: 'Poppins', sans-serif;
 .col-6{
   width: 50%;
 }
+.col-4{
+  width: 33.33333%;
+}
+
 .header__content{
  display: flex;
  align-items: center;
@@ -122,4 +126,49 @@ font-family: 'Poppins', sans-serif;
 .banner__image{
   padding: 0 30px;
   margin-top: 150px;
+}
+.service{
+  background: #1f2235;
+  padding: 100px 0;
+  color: #fff;
+}
+.common{
+  width:33.3333%;
+  margin: 20px auto;
+  text-align: center;
+}
+.heading{
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #ff4a57;
+  font-size: 16px;
+}
+.mainheader{
+font-size: 32px;
+margin-bottom: 20px;
+
+}
+.mainContent{
+  font-size: 16px;
+  color: #dfdfdf;
+}
+.commonBorder{
+  background: #ff4a57;
+  height: 3px;
+  width: 90px;
+  margin: 30px auto;
+
+}
+.services__box{
+  padding: 40px;
+  background: #23263a;
+  color: #fff;
+}
+.commonIcons{
+font-size: 40px;
+color: #ff4a57;
+margin-bottom: 15px;
+}
+.service__box-header{
+  
 }
