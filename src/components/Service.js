@@ -15,7 +15,40 @@ const Service = () => {
             itus eu venenatis vehillus diam at urna</p>
             <div className='commonBorder'></div>
             </div>
-         <div className="row">
+         <div className="row bgMain">
+          <div className="col-4 bgMain">
+            <div className="services__box">
+              <FaGithub className='commonIcons'/>
+              <div className="service__box-header">
+                Web Development
+              </div>
+              <div className="services__box-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Eveniet reiciendis eiusAutem at architecto dolore. Quo?</div>
+            </div>
+          </div>
+          <div className="col-4 ">
+            <div className="services__box">
+              <FaGithub className='commonIcons'/>
+              <div className="service__box-header">
+                Web Development
+              </div>
+              <div className="services__box-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Eveniet reiciendis eiusAutem at architecto dolore. Quo?</div>
+            </div>
+          </div>
+          <div className="col-4 ">
+            <div className="services__box">
+              <FaGithub className='commonIcons'/>
+              <div className="service__box-header">
+                Web Development
+              </div>
+              <div className="services__box-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Eveniet reiciendis eiusAutem at architecto dolore. Quo?</div>
+            </div>
+          </div>
           <div className="col-4">
             <div className="services__box">
               <FaGithub className='commonIcons'/>
@@ -27,7 +60,9 @@ const Service = () => {
                  Eveniet reiciendis eiusAutem at architecto dolore. Quo?</div>
             </div>
           </div>
+          
          </div>
+         
         </div>
       </div>
     </div>

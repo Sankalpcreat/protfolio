@@ -51,9 +51,13 @@ font-family: 'Poppins', sans-serif;
   width: 1200px;
   margin: 0 auto;
 }
+.bgMain{
+  background: #1f2235;
+}
 .row{
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 .col-6{
   width: 50%;
@@ -163,12 +167,20 @@ margin-bottom: 20px;
   padding: 40px;
   background: #23263a;
   color: #fff;
+  margin: 20px;
 }
 .commonIcons{
 font-size: 40px;
 color: #ff4a57;
 margin-bottom: 15px;
+
 }
 .service__box-header{
-  
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.service__box-p{
+  font-size: 14px;
+  color: #dfdfdf;
 }
