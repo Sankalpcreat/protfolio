@@ -1,68 +1,85 @@
 import React from 'react'
-import {FaGithub} from "react-icons/fa";
+import {FaGithub,FaCamera,FaCircleNotch,FaAndroid,FaSearchDollar,FaFileVideo} from "react-icons/fa";
 
 const Service = () => {
+  const [header]=React.useState({mainHeader:"SERVICES",subHeading:'My Services',text:'Lorem ipsum dolor.Quisque rerit dui et arcu suscipitus eu venenatis vehillus diam at urna'})
+  const [state]=React.useState([
+    {
+      id: 1,
+      icon: <FaGithub className="commonIcons" />,
+      heading: "Web Development",
+      text:
+        "Lorem Ipsum is simply dummy text of the printing typesetting\
+      industry. simply dummy",
+    },
+    {
+      id: 2,
+      icon: <FaCamera className="commonIcons" />,
+      heading: "Photography",
+      text:
+        "Lorem Ipsum is simply dummy text of the printing typesetting\
+        industry. simply dummy",
+    },
+    {
+      id: 3,
+      icon: <FaCircleNotch className="commonIcons" />,
+      heading: "Web Desing",
+      text:
+        "Lorem Ipsum is simply dummy text of the printing typesetting\
+        industry. simply dummy",
+    },
+    {
+      id: 4,
+      icon: <FaAndroid className="commonIcons" />,
+      heading: "App Devlopment",
+      text:
+        "Lorem Ipsum is simply dummy text of the printing typesetting\
+        industry. simply dummy",
+    },
+    {
+      id: 5,
+      icon: <FaFileVideo className="commonIcons" />,
+      heading: "Video Editing",
+      text:
+        "Lorem Ipsum is simply dummy text of the printing typesetting\
+        industry. simply dummy",
+    },
+    {
+      id: 6,
+      icon: <FaSearchDollar className="commonIcons" />,
+      heading: "SEO Expert",
+      text:
+        "Lorem Ipsum is simply dummy text of the printing typesetting\
+        industry. simply dummy",
+    },
+  ]);
   return (
     <div className='service'>
       <div className='container'>
         <div className='service__header'>
             <div className='common'>
-            <h3 className='heading'>SERVICES</h3>
+            <h3 className='heading'>{header.mainHeader}</h3>
             <h1 className='mainheader'>
-                My Services
+               {header.subHeading}
             </h1>
-            <p className='mainContent'>Lorem ipsum dolor.Quisque rerit dui et arcu suscip
-            itus eu venenatis vehillus diam at urna</p>
+            <p className='mainContent'>{header.text}</p>
             <div className='commonBorder'></div>
             </div>
          <div className="row bgMain">
-          <div className="col-4 bgMain">
+          {state.map(info => (
+            <div className="col-4 bgMain">
             <div className="services__box">
-              <FaGithub className='commonIcons'/>
+            {info.icon}
               <div className="service__box-header">
-                Web Development
+              {info.heading}
               </div>
               <div className="services__box-p">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                 Eveniet reiciendis eiusAutem at architecto dolore. Quo?</div>
+                {info.text}</div>
             </div>
           </div>
-          <div className="col-4 ">
-            <div className="services__box">
-              <FaGithub className='commonIcons'/>
-              <div className="service__box-header">
-                Web Development
-              </div>
-              <div className="services__box-p">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                 Eveniet reiciendis eiusAutem at architecto dolore. Quo?</div>
-            </div>
-          </div>
-          <div className="col-4 ">
-            <div className="services__box">
-              <FaGithub className='commonIcons'/>
-              <div className="service__box-header">
-                Web Development
-              </div>
-              <div className="services__box-p">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                 Eveniet reiciendis eiusAutem at architecto dolore. Quo?</div>
-            </div>
-          </div>
-          <div className="col-4">
-            <div className="services__box">
-              <FaGithub className='commonIcons'/>
-              <div className="service__box-header">
-                Web Development
-              </div>
-              <div className="services__box-p">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                 Eveniet reiciendis eiusAutem at architecto dolore. Quo?</div>
-            </div>
-          </div>
-          
-         </div>
+          ))}
          
+         </div>
         </div>
       </div>
     </div>
