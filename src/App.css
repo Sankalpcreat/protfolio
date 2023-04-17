@@ -54,6 +54,12 @@ font-family: 'Poppins', sans-serif;
 .bgMain{
   background: #1f2235;
 }
+.h-650{
+  height: 500px;
+}
+.alignCentre{
+  align-items: center;
+}
 .row{
   display: flex;
   width: 100%;
@@ -189,4 +195,24 @@ margin-bottom: 15px;
   width: 100%;
   background:#23263a;
   padding: 100px 0;
+}
+.about__image{
+  padding: 30px;
+}
+.about__image img{
+  width: 400px;
+  height: 500px;
+}
+.about__info{
+  color: #fff;
+}
+.about__info h1{
+  margin-bottom: 30px;
+}
+.about__info-p1{
+font-size: 14px;
+margin-bottom: 20px;
+}
+.about__info-p2{
+  font-size: 14px;
 }
