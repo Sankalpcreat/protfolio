@@ -150,6 +150,7 @@ font-family: 'Poppins', sans-serif;
 .mainheader{
 font-size: 32px;
 margin-bottom: 20px;
+color: #fff;
 
 }
 .mainContent{
@@ -183,4 +184,9 @@ margin-bottom: 15px;
 .service__box-p{
   font-size: 14px;
   color: #dfdfdf;
+}
+.about{
+  width: 100%;
+  background:#23263a;
+  padding: 100px 0;
 }
