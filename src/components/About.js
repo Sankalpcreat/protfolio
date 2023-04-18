@@ -4,7 +4,18 @@ const About = () => {
     const [header]=React.useState({subHeader:'About Me',
     text:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum standard dummy.'})
-  return (
+      
+    const [state]=React.useState([
+        {id:1,title:'Name:',text: 'Sankalp Singh'},
+        {id:1,title:'Email:',text: 'singhsankalp997@gmail.com'},
+        {id:1,title:'Phone',text: '+917523XXXXXX'},
+        {id:1,title:'Linkdlin',text: 'sankalpsingh03'}
+    ])
+     
+    
+
+
+    return (
     <div className='about'>
         <div className='container'>
          <div className='common'>
@@ -32,7 +43,13 @@ const About = () => {
                 </div>
                 <div className="info__contacts">
                     <div className="row">
-                        <div className="col-6"></div>
+                        {state.map(info =>(
+                          <div className="col-6">
+                          <strong>{info.title}</strong>
+                          <p>{info.text}</p>
+                      </div>
+                        ))}
+                        
                     </div>
                 </div>
             </div>

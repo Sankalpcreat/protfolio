@@ -216,3 +216,15 @@ margin-bottom: 20px;
 .about__info-p2{
   font-size: 14px;
 }
+.info__contacts{
+  margin-top: 20px;
+}
+.info__contacts strong{
+  color: #ff4a57;
+}
+.info__contacts p {
+margin-top: 3px;
+}
+.info__contacts .col-6{
+  margin-right: 22px;
+}
