@@ -60,6 +60,9 @@ font-family: 'Poppins', sans-serif;
 .alignCentre{
   align-items: center;
 }
+.justifyCentre{
+  
+}
 .row{
   display: flex;
   width: 100%;
@@ -227,4 +230,8 @@ margin-top: 3px;
 }
 .info__contacts .col-6{
   margin-right: 22px;
+}
+.contact{
+  padding: 100px 0;
+  background: #23263a;
 }
