@@ -60,8 +60,8 @@ font-family: 'Poppins', sans-serif;
 .alignCentre{
   align-items: center;
 }
-.justifyCentre{
-  
+.justifyCenter{
+  justify-content:center 
 }
 .row{
   display: flex;
@@ -178,12 +178,20 @@ color: #fff;
   background: #23263a;
   color: #fff;
   margin: 20px;
+  transition: all 0.7s linear;
 }
+.services__box:hover {
+  background: #ff4a57;
+}
+
+
 .commonIcons{
 font-size: 40px;
 color: #ff4a57;
 margin-bottom: 15px;
-
+}
+.services__box:hover .commonIcons{
+  background: #fff;
 }
 .service__box-header{
   font-size: 20px;
@@ -234,4 +242,37 @@ margin-top: 3px;
 .contact{
   padding: 100px 0;
   background: #23263a;
+}
+.contactSection-logo{
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.contactSection-logo img{
+  margin: 0 auto;
+ width: 130px;
+}
+.contactSection p{
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 20px;
+
+}
+.contactcircle{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  
+}
+.contactcircle li{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+background: #1f2235;
+margin: 0 10px;
+border: 2px solid #ff4a57;
 }
